@@ -18,7 +18,6 @@ BuildRequires:  perl(Text::Iconv)
 BuildRequires:  perl(XML::Filter::BufferText)
 BuildRequires:  perl(XML::SAX)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 A new XML Writer was needed to match the SAX2 effort because quite naturally no
