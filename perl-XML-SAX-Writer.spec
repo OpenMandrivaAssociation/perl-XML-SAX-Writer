@@ -1,7 +1,7 @@
 %define module  XML-SAX-Writer
 %define name    perl-%{module}
 %define version 0.50
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name:           %{name}
 Version:        %{version}
