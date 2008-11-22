@@ -1,7 +1,7 @@
 %define module  XML-SAX-Writer
 %define name    perl-%{module}
-%define version 0.50
-%define release %mkrel 3
+%define version 0.52
+%define release %mkrel 1
 
 Name:           %{name}
 Version:        %{version}
@@ -10,10 +10,7 @@ Summary:        SAX2 Writer
 License:        Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-Buildrequires:  perl-devel
-%endif
+Source:         http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.gz
 BuildRequires:  perl(Text::Iconv)
 BuildRequires:  perl(XML::Filter::BufferText)
 BuildRequires:  perl(XML::SAX)
@@ -39,7 +36,7 @@ it helps keep SAX1 and SAX2 separated.
 
 %prep
 %setup -q -n %{module}-%{version}
-chmod 644 Writer.pm README Changes lib/XML/SAX/Writer/XML.pm
+chmod 644 README Changes lib/XML/SAX/Writer/XML.pm
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
