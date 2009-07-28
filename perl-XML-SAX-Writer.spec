@@ -1,21 +1,21 @@
-%define module  XML-SAX-Writer
-%define name    perl-%{module}
-%define version 0.52
-%define release %mkrel 1
+%define upstream_name    XML-SAX-Writer
+%define upstream_version 0.52
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
+Name:           perl-%{upstream_name}
+Version:        %perl_convert_version %{upstream_version}
+Release:        %mkrel 1
+
 Summary:        SAX2 Writer
 License:        Artistic
 Group:          Development/Perl
-Url:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/XML/%{module}-%{version}.tar.gz
+Url:            http://search.cpan.org/dist/%{upstream_name}
+Source0:        http://www.cpan.org/modules/by-module/XML/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:  perl(Text::Iconv)
 BuildRequires:  perl(XML::Filter::BufferText)
 BuildRequires:  perl(XML::SAX)
 BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 A new XML Writer was needed to match the SAX2 effort because quite naturally no
@@ -35,7 +35,7 @@ So in the end there was a new writer. I think it's in fact better this way as
 it helps keep SAX1 and SAX2 separated.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 chmod 644 README Changes lib/XML/SAX/Writer/XML.pm
 
 %build
@@ -58,4 +58,3 @@ rm -rf %{buildroot}
 %doc README Changes
 %{perl_vendorlib}/XML
 %{_mandir}/*/*
-
