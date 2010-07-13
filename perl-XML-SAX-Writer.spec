@@ -1,5 +1,5 @@
 %define upstream_name    XML-SAX-Writer
-%define upstream_version 0.52
+%define upstream_version 0.53
 
 Name:           perl-%{upstream_name}
 Version:        %perl_convert_version %{upstream_version}
