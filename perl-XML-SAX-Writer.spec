@@ -1,14 +1,14 @@
 %define modname	XML-SAX-Writer
-%define modver 0.54
+%define modver 0.56
 
 Summary:	SAX2 Writer
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/XML/XML-SAX-Writer-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 BuildRequires:	perl(Text::Iconv)
@@ -37,7 +37,7 @@ it helps keep SAX1 and SAX2 separated.
 chmod 644 README Changes lib/XML/SAX/Writer/XML.pm
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -50,5 +50,3 @@ make test
 %doc README Changes
 %{perl_vendorlib}/XML
 %{_mandir}/man3/*
-
-

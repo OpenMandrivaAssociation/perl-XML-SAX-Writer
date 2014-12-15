@@ -1,4 +1,5 @@
 removed_sources:
   XML-SAX-Writer-0.53.tar.gz: c2e9d8f0292b3f525ab84ab275a0f6fbc72d1ffe
-sources:
   XML-SAX-Writer-0.54.tar.gz: 149359419a0b3ae0cc8e4dfc636c11ed08495b8a
+sources:
+  XML-SAX-Writer-0.56.tar.gz: fdf134a39ef3064dcc828dbc082aa0dcd2328e7a
