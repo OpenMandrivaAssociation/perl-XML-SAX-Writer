@@ -1,13 +1,13 @@
 %define modname	XML-SAX-Writer
-%define modver 0.56
+%define modver 0.57
 
 Summary:	SAX2 Writer
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/XML::SAX::Writer
 Source0:	http://www.cpan.org/modules/by-module/XML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
