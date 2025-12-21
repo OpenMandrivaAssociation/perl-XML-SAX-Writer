@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/XML::SAX::Writer
 Source0:	http://www.cpan.org/modules/by-module/XML/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl(Text::Iconv)
