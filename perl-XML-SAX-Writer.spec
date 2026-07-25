@@ -3,12 +3,12 @@
 
 Summary:	SAX2 Writer
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	3
+Version:	%{modver}
+Release:	4
 License:	Artistic
 Group:		Development/Perl
-Url:		https://metacpan.org/pod/XML::SAX::Writer
-Source0:	http://www.cpan.org/modules/by-module/XML/%{modname}-%{modver}.tar.gz
+Url:		https://github.com/perigrin/xml-sax-writer
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PERIGRIN/XML-SAX-Writer-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
